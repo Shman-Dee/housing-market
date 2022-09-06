@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Explore from './pages/Explore'
 import Offers from './pages/Offers'
 import Profile from './pages/Profile'
+import Category from './pages/Category'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import ForgotPassword from './pages/ForgotPassword'
@@ -22,6 +23,7 @@ function App() {
           <Route path="/profile" element={<PrivateRouter />}>
             <Route path="/profile" element={<Profile />} />
           </Route>
+          <Route path="/category/:categoryName" element={<Category />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
